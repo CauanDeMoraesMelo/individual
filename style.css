@@ -1,104 +1,103 @@
- Flaticon logo
 :root{
-    --fundo:#b2bbb2;
-    --quadro:#11113a;
-    --cabecalho:#23238E;
-    --botao:#00CED1;
-    --valor:#8B0000;
+    --fundo: #F1EBE5;
+    --borda: #423F32
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Cherokee:wght@100..900&display=swap');
 *{
-    margin: 0;
+    margin: 0%;
+    padding: 0%;
 }
-header{
+.tudo{
     display: flex;
-    background-image: linear-gradient(#23238E, #11113a);
-    color: azure;
-    justify-content: space-around;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 40px;
-    height: 100px;
-    margin: 50px;
-    align-items: center;
-}
-header img{
-    height: 100px;
-    width: 100px;
-}
-.pesquisar{
-    border: none;
-    border-radius:50px ;
-}
-.categoria{
-    top: 50px;
-    margin: 20px 50px 0px 50px;
-    color: black;
-    font-size: 30px;
+    
 }
 body{
-    background:var(--fundo);
+    background-color: var(--fundo);    
 }
-Hr{
-    margin: 0px 50px;
-    border-color: var(--cabecalho);
+.conteine{
+    position: relative;
+    padding-top: 50%;
+    padding-left: 15%;
+    
 }
-.button{
-    color: var(--fundo);
+.conteiner{
+    
+    text-align: end;
     display: flex;
-    justify-content: space-between;
-    margin: 20px 50px;
-
+    margin: 0%;
+    padding: 0%;
 }
-.butto{
+button{
+    right: 10;
+    top: 10;
     background-color: var(--fundo);
-    transition: background-color 0.3s;
-    cursor: pointer;
-    border: 2px solid white;
-    border-radius: 50px;
-    padding: 10px;
-    font-size: 25px;
-}
-.butto:hover{
-    background-color: var(--quadro);
-    color: white;
-}
-.agiotagem{
-    display:flex;
-    background-color: var(--quadro);
-    margin: 50px;
-}
-.analise{
-    width: 400px;
-    height: 230px;
-}
-.imagem{
-    justify-content: space-between;
-}
-.analis{
-    color: white;
-    font-family: cursive;
-    padding-left: 100px;
-}
-.increva-se{
-    border: 2px solid var(--botao);
-    cursor: pointer;
-    font-size: 25px ;
-    padding: 10px;
-    background-color: var(--botao);
-    margin:30px 100px;
-}
-.valor{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    border: 1px solid var(--borda);
+    cursor: pointer ;
     height: 50px;
-    width: 50px;
-    background-image: var(--valor);
+    width: 200px;
 }
-.cifrao{
+.text{
+    font-family: "Noto Sans Cherokee", sans-serif;
+    font-size: 100%;
+    font-weight: 11%;
+    padding-left: 20%;
+    color: var(--borda);
+}
+.texto{
+    padding-top: 70%;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 26%;
+font-size: 26px;
+color: var(--borda);
+}
+.lista{
+    list-style-type: none;
+}
+.lista li {
+    padding: 10px 0;
+}
+.logo{
+    width: 50%;
+    height: 50%;
+    padding-top: 71%;
+    padding-left: 24%;
+}
+@media screen and (min-width: 768px) {
+    .conteiner{
+        flex-direction: row;
+        background-color: var(--fundo);
+    }
+    .text{
+        flex-direction: row;
+    }
+}
+.facebook{
+    width: 34px;
+    margin: 0 10px;
+}
+.social{
     display: flex;
-    justify-content: space-around;
+    padding-left: 70%;
+    padding-top: 5%;
 }
-.cifrao div{
-    display: flex;
-    fill: var(--valor);
+.instagram{
+    width: 34px;
+    margin: 0 10px;
 }
-.preso{
-    color: white;
+.twitter{
+    width: 34px;
+    margin: 0 10px;
+}
+.whatsapp{
+    width: 34px;
+    margin: 0 10px;
+}
+.youtube{
+    width: 34px;
+    margin: 0 10px;
 }
